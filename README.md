@@ -1,2 +1,3 @@
 # proyecto_oportunidad_comercial_caba
-Análisis de oportunidades comerciales en CABA - Plataforma web con Gráfico
+Oportunidades comerciales en CABA
+Análisis de datos con Pentaho y visualización a través de un mapa sobre una plataforma web.
