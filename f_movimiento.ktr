@@ -444,7 +444,7 @@
     <database>dvdrental_md2</database>
     <port>5432</port>
     <username>postgres</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce10ca93add3</password>
+    <password>Encrypted 2be98afc86ace9c82a40ba371ca9bacdb</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -835,7 +835,7 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/home/tabi/Escritorio/TP-Final-Grupo1/datasets/IndicadoresMOC.csv</filename>
+    <filename>C:\xampp\htdocs\comercios\datasets\IndicadoresMOC.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -847,6 +847,7 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
+    <format/>
     <encoding/>
     <fields>
       <field>
@@ -971,15 +972,12 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
       </field>
       <field>
         <name>lugar_pk</name>
-        <rename/>
       </field>
       <field>
         <name>rubro_pk</name>
-        <rename/>
       </field>
       <field>
         <name>poblacion</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>

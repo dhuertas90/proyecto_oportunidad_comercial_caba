@@ -443,7 +443,7 @@
     <database>dvdrental_md2</database>
     <port>5432</port>
     <username>postgres</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce10ca93add3</password>
+    <password>Encrypted 2be98afc86ace9c82a40ba371ca9bacdb</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -770,27 +770,21 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
     <fields>
       <field>
         <name>PERIODO</name>
-        <rename/>
       </field>
       <field>
         <name>mes_ini</name>
-        <rename/>
       </field>
       <field>
         <name>mes_fin</name>
-        <rename/>
       </field>
       <field>
         <name>cuatrimestre</name>
-        <rename/>
       </field>
       <field>
         <name>anio</name>
-        <rename/>
       </field>
       <field>
         <name>periodo_str</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -911,6 +905,53 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
     </GUI>
   </step>
   <step>
+    <name>Generar clave</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Definicion de clave como integer
+var lista = PERIODO.split("-");
+var PERIODO = lista[0].concat(lista[1], lista[2], lista[3]);
+PERIODO = parseInt(PERIODO);</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>PERIODO</name>
+        <rename>PERIODO</rename>
+        <type>Integer</type>
+        <length>8</length>
+        <precision>0</precision>
+        <replace>Y</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>608</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Ordenar periodos</name>
     <type>SortRows</type>
     <description/>
@@ -963,7 +1004,7 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/home/tabi/Escritorio/TP-Final-Grupo1/datasets/IndicadoresMOC.csv</filename>
+    <filename>C:\xampp\htdocs\comercios\datasets\IndicadoresMOC.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -975,6 +1016,7 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
+    <format/>
     <encoding/>
     <fields>
       <field>
@@ -999,53 +1041,6 @@ PERIODO = anio + ini + fin + cuatrim;</jsScript_script>
     </remotesteps>
     <GUI>
       <xloc>32</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Generar clave</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>//Definicion de clave como integer
-var lista = PERIODO.split("-");
-var PERIODO = lista[0].concat(lista[1], lista[2], lista[3]);
-PERIODO = parseInt(PERIODO);</jsScript_script>
-      </jsScript>
-    </jsScripts>
-    <fields>
-      <field>
-        <name>PERIODO</name>
-        <rename>PERIODO</rename>
-        <type>Integer</type>
-        <length>8</length>
-        <precision>0</precision>
-        <replace>Y</replace>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>608</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>

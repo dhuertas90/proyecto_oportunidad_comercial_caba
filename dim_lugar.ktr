@@ -443,7 +443,7 @@
     <database>dvdrental_md2</database>
     <port>5432</port>
     <username>postgres</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce10ca93add3</password>
+    <password>Encrypted 2be98afc86ace9c82a40ba371ca9bacdb</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -625,7 +625,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/home/tabi/Escritorio/TP-Final-Grupo1/datasets/zonas.csv</filename>
+    <filename>C:\xampp\htdocs\comercios\datasets\zonas.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -637,6 +637,7 @@
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
+    <format/>
     <encoding/>
     <fields>
       <field>
@@ -991,7 +992,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/home/tabi/Escritorio/TP-Final-Grupo1/datasets/zona_nombres.csv</filename>
+    <filename>C:\xampp\htdocs\comercios\datasets\zona_nombres.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1003,6 +1004,7 @@
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
+    <format/>
     <encoding/>
     <fields>
       <field>
@@ -1141,7 +1143,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/home/tabi/Escritorio/TP-Final-Grupo1/datasets/IndicadoresMOC.csv</filename>
+    <filename>C:\xampp\htdocs\comercios\datasets\IndicadoresMOC.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1153,6 +1155,7 @@
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
+    <format/>
     <encoding/>
     <fields>
       <field>
